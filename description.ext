@@ -1,0 +1,35 @@
+//File: description.ext
+//Author: Decimus
+
+#include "dialogs\MasterHandler.hpp"
+
+respawnButton = 1;
+respawn=3;
+respawnDelay=2;
+respawnOnStart=-1;
+
+enableDebugConsole[] = {"76561198170180281"};
+
+class CfgFunctions {
+	#include "Functions.hpp"
+};
+
+class CfgNotifications {
+	class KillConfirmed {
+		title = "Kill Confirmed";
+		iconPicture = "a3\ui_f\data\igui\cfg\simpletasks\types\kill_ca.paa";
+		iconText = "";
+		description = "%1";
+		duration = 5;
+		priority = 0;
+		difficulty[] = {};
+	};
+};
+
+class RscTitles {
+	#include "dialogs\DecHUD.hpp"
+	#include "dialogs\ProgressBar.hpp"
+};
+joinUnassigned = 0;
+skipLobby = 1;
+showGPS = 0;
