@@ -1,5 +1,6 @@
 //File: description.ext
 //Author: Decimus
+
 #include "dialogs\MasterHandler.hpp"
 
 respawnButton = 1;

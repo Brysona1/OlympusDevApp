@@ -1,3 +1,5 @@
+//File: common.hpp
+//Author: Decimus
 //Had to do alot of searching but eventaly got this working
 class RscProgressText {
 	fade = 1;
