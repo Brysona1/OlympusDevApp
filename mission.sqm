@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14599.367,20.85656,16754.076};
-		dir[]={0.65074527,-0.1611916,-0.74201047};
-		up[]={0.10629389,0.9869141,-0.12119992};
-		aside[]={-0.75183839,-1.2398232e-007,-0.65936399};
+		pos[]={14595.981,28.827925,16718.432};
+		dir[]={0.73345929,-0.56048691,0.38456714};
+		up[]={0.49639288,0.82816333,0.26026854};
+		aside[]={0.46436149,-1.4901161e-008,-0.88564575};
 	};
 };
 binarizationWanted=0;
@@ -37,8 +37,8 @@ addons[]=
 	"A3_Structures_F_Heli_Furniture",
 	"A3_Structures_F_Heli_Items_Electronics",
 	"A3_Structures_F_Exp_Commercial_FuelStation_02",
-	"A3_Soft_F_Gamma_Hatchback_01",
-	"A3_Ui_F"
+	"A3_Ui_F",
+	"A3_Soft_F_Gamma_Hatchback_01"
 };
 class AddonsMetaData
 {
@@ -96,15 +96,15 @@ class AddonsMetaData
 		};
 		class Item7
 		{
-			className="A3_Soft_F_Gamma";
-			name="Arma 3 - Unarmored Land Vehicles";
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
 		class Item8
 		{
-			className="A3_Ui_F";
-			name="Arma 3 - User Interface";
+			className="A3_Soft_F_Gamma";
+			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -172,7 +172,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=11;
+		items=10;
 		class Item0
 		{
 			dataType="Group";
@@ -185,7 +185,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14609.063,17.911438,16753.207};
+						position[]={14619.764,17.911438,16737.445};
 						angles[]={0,2.2816792,0};
 					};
 					side="Civilian";
@@ -614,46 +614,6 @@ class Mission
 		};
 		class Item6
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14616.689,19.360123,16737.893};
-				angles[]={0,5.5645633,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				name="test";
-			};
-			id=21;
-			type="C_Hatchback_01_sport_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[""DemoCharge_Remote_Mag""],[2]],[[""FirstAidKit"",""V_HarnessOGL_brn""],[4,1]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item7
-		{
 			dataType="Marker";
 			position[]={14607.929,17.91,16735.875};
 			name="respawn_civillian";
@@ -661,7 +621,7 @@ class Mission
 			angle=131.879;
 			id=27;
 		};
-		class Item8
+		class Item7
 		{
 			dataType="Group";
 			side="West";
@@ -673,7 +633,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14603.31,17.911438,16729.045};
+						position[]={14605.682,17.911438,16726.023};
 						angles[]={0,0.85521132,0};
 					};
 					side="West";
@@ -690,12 +650,12 @@ class Mission
 			};
 			id=28;
 		};
-		class Item9
+		class Item8
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14623.396,19.360123,16736.219};
+				position[]={14621.815,19.360123,16734.654};
 				angles[]={0,0.79055274,0};
 			};
 			side="Empty";
@@ -706,7 +666,7 @@ class Mission
 			id=32;
 			type="C_Hatchback_01_sport_F";
 		};
-		class Item10
+		class Item9
 		{
 			dataType="Group";
 			side="Civilian";
@@ -718,7 +678,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14604.416,17.911438,16728.104};
+						position[]={14607.151,17.911438,16724.84};
 						angles[]={0,0.78539819,0};
 					};
 					side="Civilian";

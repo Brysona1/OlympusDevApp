@@ -23,13 +23,3 @@ class Decimus {
 		class attachSpeedBomb{};
 	};
 };
-//Not my code
-//Author: Aquaman
-class Aquaman {
-	tag = "AQ";
-	class Functions {
-		file = "scripts\functions";
-		class doAnim {};
-		class jumpOver {};
-	};
-};

@@ -1,5 +1,9 @@
 //File: fn_onKill.sqf
 //Author: Decimus
+/*
+Description:
+	performs all necessary actions when a player is killed
+*/
 params [
   ["_unit", objNull, [objNull]],
   ["_killer", objNull, [objNull]]
