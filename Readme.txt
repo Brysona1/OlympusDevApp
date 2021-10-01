@@ -4,5 +4,5 @@ Mainly focus on the function in DecFunctions
 Gas station robbery
 suicide vest
 kill notifications
-repacking mags
+repacking mags (On inventory close)
 speed bomb
