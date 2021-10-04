@@ -9,7 +9,7 @@ Description:
 params[["_object", objNull]];
 if(_object isEqualTo objNull) exitWith {}; //check if object returns null
 if(player getVariable["DEC_RobbingGasStation", false]) exitWith {hint "You are already robbing this gas station";}; //check if player is already robbing the gas station
-if(_object in DEC_ActiveRobberies) exitWith {hint "This gas station is already being robbed by someone else";};     //check if someone else is robbing the gas station
+if(_object in DEC_ActiveRobberies) exitWith {hint "This gas station was robbed recently by someone else";};     //check if someone else is robbing the gas station
 if(player getVariable["DEC_RecentGSRobbery", false]) exitWith {hint "You must wait 5 minutes before attempting this again";}; //check if player is already robbing the gas station
 if(primaryWeapon player isEqualTo "" && secondaryWeapon player isEqualTo "") exitWith {hint "Must have a weapon to rob the gas station";}; //exit if player doesnt have weapon
 if(playerSide isNotEqualTo civilian) exitWith {hint "You cannot rob a gas station while on duty";}; //make sure player is not cop or medicmeone else";};
@@ -56,6 +56,7 @@ while {_robberyProgress < 100 && alive player} do {
 
 //after robbery is over/canceled
 _progressBar closeDisplay 1;
+
 DEC_ActiveRobberies deleteAt (DEC_ActiveRobberies find _object);
 publicVariable "DEC_ActiveRobberies";
 
