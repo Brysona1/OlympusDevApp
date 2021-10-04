@@ -16,11 +16,13 @@ player enableFatigue false;
 player switchCamera "EXTERNAL";
 DEC_ActiveRobberies = [];
 player addAction ["<t color='#ff1100'>Setoff Suicdie Vest</t>", {
+  if (vehicle player != player) exitWith {hint "You cannot activate a suicide vest while inside a vehicle"};
   _bomb = "Bo_GBU12_LGB" createVehicle [0, 0, 300];
   _bomb attachTo [player, [0, 0, 1]];
   detach _bomb;
   removeVest player;
   },nil, 0, true, true, "", "vest player isEqualTo 'V_HarnessOGL_brn'"];
+
 player addAction ["Attach Speed Bomb", {
   [] spawn DEC_fnc_attachSpeedBomb
   },nil, 0, true, true, "", "'DemoCharge_Remote_Mag' in magazines player and cursorTarget isKindOf 'LandVehicle' and player distance cursorObject < 3"];
