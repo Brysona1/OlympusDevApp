@@ -27,7 +27,5 @@ if (_unit isKindOf "Man") then {
       playSound "FD_Timer_F"; // other sound option HintExpand
       ["KillConfirmed",[_notifMessage]] call BIS_fnc_showNotification;
     };
-    uisleep 0.2;
-    player setDamage 0;
   };
 };
